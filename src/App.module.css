@@ -4,8 +4,7 @@
   padding: 0 auto;
   border: 10px solid rgb(68, 17, 53);
   width: 1000px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXcQAZfXJomxrUgjvNSLyHCR53ASiAi5D48BJUIzhMtyDUwS-AMqD00KRD941_Afjqt8&usqp=CAU");
- background: linear-gradient(red, blue,green, yellow,pink);
+ background: radial-gradient(orange, gold);
 }
 
 .items {

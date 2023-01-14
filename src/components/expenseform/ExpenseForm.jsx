@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Button from "../UI/button/Button";
 import FormInput from "../UI/forminput/FormInput";
-import "./ExpenseForm.css"
+import style from "./ExpenseForm.module.css"
+
+
 const ExpenseForm = (props) => {
   const [name, setName] = useState("");
   const [year, setYear] = useState("");
@@ -25,7 +27,7 @@ const ExpenseForm = (props) => {
   };
 
   return (
-    <form className="form">
+    <form className={style.form}>
       <FormInput
         id="name"
         labelName="Name:"
@@ -41,9 +43,10 @@ const ExpenseForm = (props) => {
         id="year"
         value={year}
         onChange={yearInputChangeHandler}
+        placeholder="Age"
       />
-      <div className="button_div">
-        <Button title="ADD" value={name} disabled={!enabled} onClick={saveHandler}/>
+      <div>
+        <Button title="ADD USER" value={name} disabled={!enabled} onClick={saveHandler}/>
       </div>
     </form>
   );

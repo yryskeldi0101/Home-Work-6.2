@@ -1,7 +1,9 @@
 import React from 'react'
-import "./Button.css"
+import style from "./Button.module.css"
+
+
 const Button = ({onClick,disabled,title}) => {
-  return <button className="mainBtn" onClick={onClick} disabled={disabled}>{title}</button>;
+  return <button className={style.mainBtn} onClick={onClick} disabled={disabled}>{title}</button>;
 
 }
 

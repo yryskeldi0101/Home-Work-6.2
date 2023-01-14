@@ -7,7 +7,9 @@ flex-direction: column;
 height: 50px;
 border: 7px solid rgb(78, 18, 61);
 }
-
+:focus {
+    background-color: #00c8ff ;
+    }
 .label {
 font-size: 30px;
 color: black;

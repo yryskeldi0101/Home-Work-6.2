@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import style from"./App.module.css";
 import ExpenseForm from "./components/expenseform/ExpenseForm";
 import Expenses from "./components/expenses/Expenses";
 
@@ -35,8 +35,8 @@ users.sort((a, b) => {
   return b.year - a.year
 })
   return (
-    <div className="apps">
-      <div className="items">
+    <div className={style.apps}>
+      <div className={style.items}>
         <ExpenseForm onNewExpenseAdd={addNewExpenseHandler}/>
         <Expenses expenses={users} />
       </div>

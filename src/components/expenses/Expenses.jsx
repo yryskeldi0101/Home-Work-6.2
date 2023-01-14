@@ -1,10 +1,10 @@
 import React from "react";
 import ExpenseItem from "../expenseitem/ExpenseItem";
-import "./Expense.css"
+import style from "./Expense.module.css"
 
 const Expenses = ({ expenses }) => {
   return (
-    <ul className="ul-list">
+    <ul className={style.ulList}>
       {expenses.map((elem,index) => {
         return (
           <ExpenseItem
